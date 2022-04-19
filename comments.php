@@ -32,8 +32,8 @@ if ( post_password_required() ) {
 			if ( '1' === $outfitlada_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'outfitlada' ),
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
+					esc_html__( 'Comments', 'outfitlada' ),
+					'<span>' . '</span>'
 				);
 			} else {
 				printf( 

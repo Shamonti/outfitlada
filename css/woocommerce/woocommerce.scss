@@ -545,6 +545,11 @@ p.demo_store,
 
     li {
       list-style: none outside;
+      a {
+        .count {
+          display: none;
+        }
+      }
     }
   }
 
@@ -991,8 +996,10 @@ p.demo_store,
         width: 1em;
         height: 1em;
         line-height: 1;
-        font-family: 'WooCommerce';
-        content: '\e021';
+        // font-family: 'WooCommerce';
+        // content: '\e021';
+        font-family: FontAwesome;
+        content: '\f005';
         text-indent: 0;
       }
 
@@ -2271,4 +2278,47 @@ body:not(.search-results) .twentysixteen .entry-summary {
 .twentysixteen .price ins {
   background: inherit;
   color: inherit;
+}
+.entry-footer {
+  display: none !important;
+}
+
+/* My Account Page */
+.woocommerce-MyAccount-navigation {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 2rem;
+      margin: auto 0;
+      padding-left: 1rem;
+      border: 1px solid #dcdcdcb0;
+      border-radius: 3rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dcdcdc67 !important;
+      }
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.woocommerce-MyAccount-content {
+  a {
+    text-decoration: none;
+  }
+
+  @media only screen and(max-width: 768px) {
+    margin-top: 2rem;
+  }
 }

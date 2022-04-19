@@ -92,7 +92,6 @@ get_header();
 					<?php echo do_shortcode('[sale_products columns=4 limit=4]'); ?>
 				</div>
 	</section>
-	
 	</main>
 
 <?php

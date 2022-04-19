@@ -99,7 +99,7 @@
 					<div class="col-12 d-flex justify-content-center">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<i class="bi bi-list"></i>
-						<?php esc_html_e( 'Primary Menu', 'pawsgang' ); ?>
+						<?php esc_html_e( '', 'outfitlada' ); ?>
 						</button>
 					</div>
 
